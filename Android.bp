@@ -134,6 +134,18 @@ android_app_import {
 }
 
 android_app_import {
+	name: "ims",
+	owner: "motorola",
+	apk: "proprietary/system_ext/priv-app/ims/ims.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
+android_app_import {
 	name: "qcrilmsgtunnel",
 	owner: "motorola",
 	apk: "proprietary/system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk",
@@ -152,10 +164,35 @@ dex_import {
 	system_ext_specific: true,
 }
 
+dex_import {
+	name: "moto-telephony",
+	owner: "motorola",
+	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
+	system_ext_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "android.hardware.gnss@2.1-service-qti",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
 prebuilt_etc_xml {
 	name: "manifest_IMoto_Fingerprint",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml",
+	filename_from_src: true,
+	sub_dir: "vintf/manifest",
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	name: "vendor.qti.gnss@4.0-service",
+	owner: "motorola",
+	src: "proprietary/vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
