@@ -158,16 +158,16 @@ android_app_import {
 }
 
 dex_import {
-	name: "moto-telephony",
+	name: "embmslibrary",
 	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
-	name: "embmslibrary",
+	name: "moto-telephony",
 	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
 	system_ext_specific: true,
 }
 
@@ -175,15 +175,6 @@ prebuilt_etc_xml {
 	name: "android.hardware.gnss@2.1-service-qti",
 	owner: "motorola",
 	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "manifest_IMoto_Fingerprint",
-	owner: "motorola",
-	src: "proprietary/vendor/etc/vintf/manifest/manifest_IMoto_Fingerprint.xml",
 	filename_from_src: true,
 	sub_dir: "vintf/manifest",
 	soc_specific: true,
