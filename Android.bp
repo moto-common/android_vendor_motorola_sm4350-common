@@ -158,16 +158,16 @@ android_app_import {
 }
 
 dex_import {
-	name: "embmslibrary",
+	name: "moto-telephony",
 	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
+	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
 	system_ext_specific: true,
 }
 
 dex_import {
-	name: "moto-telephony",
+	name: "embmslibrary",
 	owner: "motorola",
-	jars: ["proprietary/system_ext/framework/moto-telephony.jar"],
+	jars: ["proprietary/system_ext/framework/embmslibrary.jar"],
 	system_ext_specific: true,
 }
 

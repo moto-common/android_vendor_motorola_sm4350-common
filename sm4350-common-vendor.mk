@@ -580,7 +580,7 @@ PRODUCT_PACKAGES += \
     uceShimService \
     ims \
     qcrilmsgtunnel \
-    embmslibrary \
     moto-telephony \
+    embmslibrary \
     android.hardware.gnss@2.1-service-qti \
     vendor.qti.gnss@4.0-service
