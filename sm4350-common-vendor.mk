@@ -482,8 +482,6 @@ PRODUCT_PACKAGES += \
     CneApp \
     IWlanService \
     QtiTelephonyService \
-    TeeService \
-    atfwd \
     embms \
     uceShimService \
     ims \
